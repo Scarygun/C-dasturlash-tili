@@ -2,7 +2,7 @@
 
 int main() {
     int a, b, c;
-    
+
     printf("a sonni kiriting: ");
     scanf("%d", &a);
     printf("b sonni kiriting: ");
@@ -10,14 +10,12 @@ int main() {
     printf("c sonni kiriting: ");
     scanf("%d", &c);
 
-    if (a < b && b < c) {
-        printf("1\n");
-    } else if (a > b && b > c) {
-        printf("2\n");
-    } else if (b > a && b > c) {
+    if (a == b && a != c) {
+        printf("%d\n", c);
+    } else if (a == c && a != b) {
         printf("%d\n", b);
-    } else if (a == b && b == c) {
-        printf("5\n");
+    } else if (b == c && b != a) {
+        printf("%d\n", a);
     } else {
         printf("0\n");
     }
